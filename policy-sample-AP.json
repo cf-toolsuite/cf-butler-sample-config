@@ -1,7 +1,12 @@
 {
-    "description": "Remove stopped applications that are older than some duration from now and restricted to whitelisted organizations",
+    "description": "Remove stopped applications that are older than some date/time from now and restricted to whitelisted organizations",
+    "operation": "delete",
     "state": "stopped",
-    "from-duration": "PT30S",
-    "delete-services": true,
-    "organization-whitelist": [ "pivot-cphillipson" ]
+    "options": {
+        "from-duration": "PT30S",
+        "delete-services": true
+    },
+    "organization-whitelist": [
+        "zoo-labs"
+    ]
 }
