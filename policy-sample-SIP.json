@@ -1,10 +1,10 @@
 {
-    "description": "Remove orphaned services that are older than some duration from now and restricted to whitelisted organizations",
-    "operation": "delete",
-    "options": {
-      "from-duration": "PT30S"
-    },
-    "organization-whitelist": [
-      "zoo-labs"
-    ]
+  "description":"Remove orphaned services that are older than some duration from now and restricted to whitelisted organizations",
+  "operation":"delete",
+  "options":{
+     "from-duration":"PT30S"
+  },
+  "organization-whitelist":[
+     "zoo-labs"
+  ]
 }
