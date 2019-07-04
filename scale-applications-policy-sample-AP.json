@@ -1,0 +1,12 @@
+{
+    "description":"Scale running applications restricted to whitelisted organizations",
+    "operation":"scale-instances",
+    "state":"started",
+    "options":{
+       "instances-from":1,
+       "instances-to":2
+    },
+    "organization-whitelist":[
+       "zoo-labs"
+    ]
+ }
