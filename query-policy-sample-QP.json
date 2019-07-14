@@ -1,0 +1,16 @@
+{
+    "description":"Sample query policy that will run one query and email the results as per the template configuration.",
+    "queries":[
+        {
+            "name":"docker-images",
+            "description":"Find all running Docker image based containers",
+            "sql":"select * from application_detail where running_instances > 0 and requested_state = 'started' and image is not null"
+        }
+    ],
+    "email-notification-template":{
+        "from":"admin@pcf.dev.cloudmonk.me",
+        "to":[ "cphillipson@pivotal.io" ],
+        "subject":"Query Policy Sample Report",
+        "body":"Results are herewith attached for your consideration."
+    }
+}
