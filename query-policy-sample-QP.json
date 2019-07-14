@@ -1,10 +1,15 @@
 {
-    "description":"Sample query policy that will run one query and email the results as per the template configuration.",
+    "description":"Sample query policy that will run two queries and email the results as per the template configuration.",
     "queries":[
         {
             "name":"docker-images",
             "description":"Find all running Docker image based containers",
             "sql":"select * from application_detail where running_instances > 0 and requested_state = 'started' and image is not null"
+        },
+        {
+            "name":"docker-images",
+            "description":"Find all running applications pushed in the last week not including the system organization",
+            "sql":"select * from application_detail where running_instances > 0 and requested_state = 'started' and week(last_pushed) = week(current_date) -1 AND year(last_pushed) = year(current_date) and organization not in ('system')"
         }
     ],
     "email-notification-template":{
