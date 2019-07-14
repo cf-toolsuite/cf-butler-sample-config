@@ -7,7 +7,7 @@
             "sql":"select * from application_detail where running_instances > 0 and requested_state = 'started' and image is not null"
         },
         {
-            "name":"docker-images",
+            "name":"all-apps-pushed-and-still-running-in-the-last-week",
             "description":"Find all running applications pushed in the last week not including the system organization",
             "sql":"select * from application_detail where running_instances > 0 and requested_state = 'started' and week(last_pushed) = week(current_date) -1 AND year(last_pushed) = year(current_date) and organization not in ('system')"
         }
