@@ -1,0 +1,15 @@
+{
+    "days-since-lst-update": 7,
+    "operator-email-template": {
+        "from":"admin@pcf.dev.cloudmonk.me",
+        "to":[ "cphillipson@pivotal.io" ],
+        "subject":"Hygiene Policy Sample Report",
+        "body":"Results are herewith attached for your consideration."
+    },
+    "notifyee-email-template": {
+        "from":"admin@pcf.dev.cloudmonk.me",
+        "subject":"Hygiene Policy Sample Report",
+        "body":"Results are herewith attached for your consideration."
+    },
+    "organization-whitelist": [ "blast-radius" ]
+}
