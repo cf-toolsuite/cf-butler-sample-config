@@ -1,5 +1,5 @@
 {
-    "days-since-lst-update": 7,
+    "days-since-last-update": 7,
     "operator-email-template": {
         "from":"admin@pcf.dev.cloudmonk.me",
         "to":[ "cphillipson@pivotal.io" ],
