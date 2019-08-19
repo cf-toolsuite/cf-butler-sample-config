@@ -4,11 +4,11 @@
         "from":"admin@pcf.demo.ironleg.me",
         "to":[ "cphillipson@pivotal.io" ],
         "subject":"Emergency Notice Policy Sample Report",
-        "body":"<h3>Please note these workloads<h3><p>Results are herewith attached for your consideration.</p>"
+        "body":"<h3>Please note these workloads</h3><p>Results are herewith attached for your consideration.</p>"
     },
     "notifyee-email-template": {
         "from":"admin@pcf.demo.ironleg.me",
         "subject":"Emergency Notice Policy Sample Report",
-        "body":"<h3>Please note these workloads<h3><p>To avoid repeated notification:</p><ul><li>for each application please take appropriate steps to ensure it is running on another foundation</li><li>for each service instance please take appropriate steps to ensure it is running on another foundation</li></ul>"
+        "body":"<h3>Please note these workloads</h3><p>To avoid repeated notification:</p><ul><li>for each application please take appropriate steps to ensure it is running on another foundation</li><li>for each service instance please take appropriate steps to ensure it is running on another foundation</li></ul>"
     }
 }
