@@ -38,7 +38,7 @@
         }
     ],
     "email-notification-template":{
-        "from":"admin@pcf.dev.cloudmonk.me",
+        "from":"admin@pcf.demo.ironleg.me",
         "to":[ "cphillipson@pivotal.io" ],
         "subject":"Query Policy Sample Report",
         "body":"Results are herewith attached for your consideration."
