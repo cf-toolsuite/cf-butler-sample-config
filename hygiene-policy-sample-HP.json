@@ -10,6 +10,5 @@
         "from":"admin@pcf.demo.ironleg.me",
         "subject":"Hygiene Policy Sample Report",
         "body":"<h3>These workloads are flagged as dormant</h3><p>To avoid repeated notification:</p><ul><li>for each application execute a cf restage or cf delete</li><li>for each service instance execute a cf update-service or cf delete-service</li></ul><p>depending on whether or not you want to keep the workload running.</p>"
-    },
-    "organization-whitelist": [ "blast-radius" ]
+    }
 }
