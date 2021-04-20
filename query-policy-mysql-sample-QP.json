@@ -15,26 +15,6 @@
             "name":"all-single-instance-apps",
             "description":"Find all running single instance applications",
             "sql":"select * from application_detail where running_instances = 1 and requested_state = 'started'"
-        },
-        {
-            "name":"all-stopped-instances-excluding-system-org",
-            "description":"Find all stopped applications excluding the system organization",
-            "sql":"select * from application_detail where running_instances = 0 and requested_state = 'stopped' and organization not in ('system')"
-        },
-        {
-            "name":"all-mysql-service-instances-excluding-system-org",
-            "description":"Find all MySQL service instances excluding the system organization",
-            "sql":"select * from service_instance_detail where service = 'p.mysql' and organization not in ('system')"
-        },
-        {
-            "name":"apps-last-pushed-more-than-six-months-ago-excluding-system-org",
-            "description":"Find applications that were last pushed more than six months ago excluding the system organization",
-            "sql":"select * from application_detail where last_pushed <= (current_timestamp - interval 6 month) and organization not in ('system')"
-        },
-        {
-            "name":"service-instances-last-updated-more-than-six-months-ago-excluding-system-org",
-            "description":"Find service instances that were last updated more than six months ago excluding the system organization",
-            "sql":"select * from service_instance_detail where last_updated <= (current_timestamp - interval 6 month) and organization not in ('system')"
         }
     ],
     "email-notification-template":{
