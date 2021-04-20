@@ -29,12 +29,12 @@
         {
             "name":"apps-last-pushed-more-than-six-months-ago-excluding-system-org",
             "description":"Find applications that were last pushed more than six months ago excluding the system organization",
-            "sql":"select * from application_detail where last_pushed <= date_sub(curdate(), interval 6 month) and organization not in ('system')"
+            "sql":"select * from application_detail where last_pushed <= (current_timestamp - interval 6 month) and organization not in ('system')"
         },
         {
             "name":"service-instances-last-updated-more-than-six-months-ago-excluding-system-org",
             "description":"Find service instances that were last updated more than six months ago excluding the system organization",
-            "sql":"select * from service_instance_detail where last_updated <= date_sub(curdate(), interval 6 month) and organization not in ('system')"
+            "sql":"select * from service_instance_detail where last_updated <= (current_timestamp - interval 6 month) and organization not in ('system')"
         }
     ],
     "email-notification-template":{
