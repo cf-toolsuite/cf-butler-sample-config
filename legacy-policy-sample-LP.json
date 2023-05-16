@@ -1,5 +1,5 @@
 {
-    "stacks": [ "windows2012R2","cflinuxfs2" ],
+    "stacks": [ "cflinuxfs3" ],
     "operator-email-template": {
         "from":"admin@cloudmonk.me",
         "to":[ "cphillipson@vmware.com" ],
