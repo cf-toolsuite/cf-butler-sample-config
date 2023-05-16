@@ -38,8 +38,8 @@
         }
     ],
     "email-notification-template":{
-        "from":"admin@pcf.demo.ironleg.me",
-        "to":[ "cphillipson@pivotal.io" ],
+        "from":"admin@cloudmonk.me",
+        "to":[ "cphillipson@vmware.com" ],
         "subject":"Query Policy Sample Report",
         "body":"Results are herewith attached for your consideration."
     }

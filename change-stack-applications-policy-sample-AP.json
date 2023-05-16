@@ -3,10 +3,10 @@
     "operation":"change-stack",
     "state":"started",
     "options":{
-       "stack-from":"cflinuxfs2",
-       "stack-to":"cflinuxfs3"
+       "stack-from":"cflinuxfs3",
+       "stack-to":"cflinuxfs4"
     },
     "organization-whitelist":[
-       "zoo-labs","jujubees","full-beaker"
+       "zoo-labs"
     ]
  }

@@ -1,9 +1,9 @@
 {
-    "description":"Remove stopped applications that are older than some date/time from now and restricted to whitelisted organizations",
+    "description":"Remove applications that have remained in stopped state for 2 days or longer restricted to whitelisted organizations, also delete any services associated with those applications",
     "operation":"delete",
     "state":"stopped",
     "options":{
-       "from-duration":"PT30S",
+       "from-duration":"P2D",
        "delete-services":true
     },
     "organization-whitelist":[

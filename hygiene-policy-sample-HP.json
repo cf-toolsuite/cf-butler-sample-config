@@ -1,13 +1,13 @@
 {
     "days-since-last-update": 7,
     "operator-email-template": {
-        "from":"admin@pcf.demo.ironleg.me",
-        "to":[ "cphillipson@pivotal.io" ],
+        "from":"admin@cloudmonk.me",
+        "to":[ "cphillipson@vmware.com" ],
         "subject":"Hygiene Policy Sample Report",
         "body":"<h3>These workloads are flagged as dormant</h3><p>Results are herewith attached for your consideration.</p>"
     },
     "notifyee-email-template": {
-        "from":"admin@pcf.demo.ironleg.me",
+        "from":"admin@cloudmonk.me",
         "subject":"Hygiene Policy Sample Report",
         "body":"<h3>These workloads are flagged as dormant</h3><p>To avoid repeated notification:</p><ul><li>for each application execute a cf restage or cf delete</li><li>for each service instance execute a cf update-service or cf delete-service</li></ul><p>depending on whether or not you want to keep the workload running.</p>"
     }

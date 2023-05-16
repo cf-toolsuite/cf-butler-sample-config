@@ -1,9 +1,9 @@
 {
-    "description":"Stop applications that were last_pushed six months earlier than now restricted to whitelisted organizations",
+    "description":"Stop applications that were last_pushed three months earlier than now restricted to whitelisted organizations",
     "operation":"stop",
     "state":"started",
     "options":{
-       "from-duration":"P180D"
+       "from-duration":"P90D"
     },
     "organization-whitelist":[
        "zoo-labs"
