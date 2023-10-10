@@ -1,5 +1,7 @@
 {
     "days-since-last-update": 7,
+    "include-applications": true,
+    "include-service-instances": true,
     "operator-email-template": {
         "from":"admin@pcf.demo.ironleg.me",
         "to":[ "cphillipson@pivotal.io" ],
